@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioGuessr</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>RadioGuessr</h1>
+    </nav>
+    
+    <div class="game-container">
+        <div id="map"></div>
+        
+        <div class="score-container">
+            <div class="score">
+                <span id="score">0</span>
+            </div>
+        </div>
+        
+        <div class="controls-container">
+            <button id="playRandom" class="play-button">Play Random Station</button>
+            <div id="player-container">
+                <audio id="audioPlayer" controls></audio>
+            </div>
+        </div>
+        
+        <div id="station-info" class="result-panel"></div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

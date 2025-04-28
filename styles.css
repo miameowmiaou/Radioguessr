@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.score-container {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.controls-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.play-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.play-button:hover {
+    background: #45a049;
+}
+
+.play-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+#player-container {
+    width: 100%;
+}
+
+#audioPlayer {
+    width: 100%;
+    height: 36px;
+}
+
+.result-panel {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+    min-width: 300px;
+    z-index: 1000;
+}
+
+.result-panel p {
+    margin: 5px 0;
+}
+
+#station-info {
+    margin: 50px 0;
+    grid-column: 1 / -1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+#score-container {
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
